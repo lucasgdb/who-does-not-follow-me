@@ -1,13 +1,14 @@
 {
 	"name": "who-does-not-follow-me",
-	"description": "A Node.js script to verify who does not follow you on GitHub.",
+	"description": "A Node.js script to check who does not follow you on the GitHub.",
 	"version": "1.0.0",
 	"main": "src/index.js",
 	"repository": "https://github.com/lucasnaja/who-does-not-follow-me.git",
 	"author": "Lucas Bittencourt <lucasnaja0@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"lint": "eslint --init"
+		"lint": "eslint --init",
+		"start": "node ."
 	},
 	"keywords": [
 		"nodejs",
