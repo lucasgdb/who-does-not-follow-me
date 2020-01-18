@@ -43,8 +43,7 @@ exports.whoDoesNotFollowMe = async username => {
 			followers.push(...data.map(({ login }) => login));
 
 			if (data.length < 100) break;
-
-			page++;
+			else page++;
 		} while (true);
 	} catch ({
 		response: {
