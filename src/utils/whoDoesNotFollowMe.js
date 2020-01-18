@@ -45,7 +45,7 @@ exports.whoDoesNotFollowMe = async username => {
 	} while (true);
 
 	const thesePeopleDoNotFollowMe = following.filter(
-		login => !followers.includes(login)
+		login => !followers.includes(login),
 	);
 
 	return thesePeopleDoNotFollowMe;
