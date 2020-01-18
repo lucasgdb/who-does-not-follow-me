@@ -1,5 +1,5 @@
 const { beautifyNotFollowers } = require('./utils/beautifyNotFollowers');
 
-const username = 'ççççççççççç~~';
+const username = 'lucasnaja';
 
 beautifyNotFollowers(username);
