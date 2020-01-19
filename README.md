@@ -4,7 +4,7 @@
 
 ## Description
 
-A Node.js script to verify who does not follow you on GitHub. (based on your following and followers)
+A Node.js script to check who does not follow you on GitHub. (based on your following and followers)
 
 ## How to use
 

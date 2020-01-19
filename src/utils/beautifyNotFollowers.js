@@ -1,12 +1,18 @@
 const { whoDoesNotFollowMe } = require('./whoDoesNotFollowMe');
 
-exports.beautifyNotFollowers = async username => {
+exports.beautifyNotFollowers = async ({
+	username = '',
+	client_id = '',
+	client_secret = '',
+}) => {
 	console.log(
 		`\x1b[32mChecking the followers of \x1b[37m${username}\x1b[32m...\x1b[0m`,
 	);
 
 	const { thesePeopleDoNotFollowMe, message } = await whoDoesNotFollowMe(
 		username,
+		client_id,
+		client_secret,
 	);
 
 	if (thesePeopleDoNotFollowMe === undefined) console.log(message);

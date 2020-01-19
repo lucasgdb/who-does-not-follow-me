@@ -1,11 +1,11 @@
 const GitHubAPI = require('../services/GitHub.service');
-const {
-	per_page,
-	client_id,
-	client_secret,
-} = require('../config/configuration.json');
+const { per_page } = require('../config/configuration.json');
 
-exports.whoDoesNotFollowMe = async username => {
+exports.whoDoesNotFollowMe = async ({
+	username = '',
+	client_id = '',
+	client_secret = '',
+}) => {
 	const followers = [];
 	const following = [];
 
