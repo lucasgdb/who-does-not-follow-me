@@ -30,7 +30,7 @@ beautifyNotFollowers({
 }); // Everyone you are following follows you.
 ```
 
-clean output:
+Clean output:
 
 ```js
 const { whoDoesNotFollowMe } = require('who-does-not-follow-me');
