@@ -1,4 +1,6 @@
 const { beautifyNotFollowers } = require('./utils/beautifyNotFollowers');
-const { whoDoesNotFollowMe } = require('./utils/whoDoesNotFollowMe')
+const { whoDoesNotFollowMe } = require('./utils/whoDoesNotFollowMe');
 
-module.exports = { beautifyNotFollowers, whoDoesNotFollowMe }
+beautifyNotFollowers({ username: 'lucasnaja' });
+
+module.exports = { beautifyNotFollowers, whoDoesNotFollowMe };
