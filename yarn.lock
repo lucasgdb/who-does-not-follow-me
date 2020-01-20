@@ -110,10 +110,10 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
-beautify.log@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/beautify.log/-/beautify.log-1.2.0.tgz#ebc7ef7a302bd87c253ca876a42ff97910a43c82"
-  integrity sha512-DABFmMyYwbz8W8cFybsG8Nbxvr3JTSNBZMCUm/Y7uWDAEVYHORcP3+i+1QB3zu8cG4vpaTbiuWbj2d41DaQSeg==
+beautify.log@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/beautify.log/-/beautify.log-1.2.1.tgz#d52981004f475221c83de7368437b3e2823674fe"
+  integrity sha512-KtKGEr6pIxVyQ52bYGWL/E39nij9czGvdRixqKvpWIP7rugIgqmQxdCBdSXzybD5SOWBi2Paaaj/5R58be2epw==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
