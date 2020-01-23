@@ -25,8 +25,6 @@ const { beautifyNotFollowers } = require('who-does-not-follow-me');
 
 beautifyNotFollowers({
 	username: 'lucasnaja',
-	client_id: '',
-	client_secret: '',
 }); // Everyone you are following follows you.
 ```
 
@@ -35,7 +33,7 @@ Clean output:
 ```js
 const { whoDoesNotFollowMe } = require('who-does-not-follow-me');
 
-async function notFollowers(username = '', client_id = '', client_secret = '') {
+async function notFollowers(username, client_id, client_secret) {
 	const { thesePeopleDoNotFollowMe } = await whoDoesNotFollowMe({
 		username,
 		client_id,
