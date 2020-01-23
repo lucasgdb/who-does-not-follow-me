@@ -1,7 +1,7 @@
 {
 	"name": "who-does-not-follow-me",
 	"description": "A Node.js script to check who does not follow you on the GitHub.",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"main": "src/index.js",
 	"repository": "https://github.com/lucasnaja/who-does-not-follow-me.git",
 	"author": "Lucas Bittencourt <lucasnaja0@gmail.com>",
@@ -25,6 +25,6 @@
 	},
 	"dependencies": {
 		"axios": "^0.19.1",
-		"beautify.log": "^1.2.1"
+		"beautify.log": "^1.2.2"
 	}
 }
