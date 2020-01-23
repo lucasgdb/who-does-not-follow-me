@@ -3,9 +3,9 @@ const beautify = require('beautify.log');
 const { whoDoesNotFollowMe } = require('./whoDoesNotFollowMe');
 
 exports.beautifyNotFollowers = async ({
-	username = '',
-	client_id = '',
-	client_secret = '',
+	username,
+	client_id,
+	client_secret,
 }) => {
 	beautify.log(
 		`{fgGreen}Checking the followers of {fgWhite}${username}{fgGreen}...`,
