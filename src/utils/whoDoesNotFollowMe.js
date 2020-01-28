@@ -5,11 +5,11 @@ const {
 	client_secret: secret,
 } = require('../config/configuration.json');
 
-exports.whoDoesNotFollowMe = async function({
+exports.whoDoesNotFollowMe = async ({
 	username = '',
 	client_id = id,
 	client_secret = secret,
-}) {
+}) => {
 	const followers = [];
 	const following = [];
 
