@@ -9,7 +9,7 @@ exports.whoDoesNotFollowMe = async ({
 	username = '',
 	client_id = id,
 	client_secret = secret,
-}) => {
+} = {}) => {
 	const followers = [];
 	const following = [];
 

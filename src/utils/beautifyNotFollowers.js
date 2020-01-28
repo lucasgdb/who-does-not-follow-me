@@ -1,4 +1,5 @@
 const beautify = require('beautify.log');
+const { getLine, input } = require('./readLine');
 
 const { whoDoesNotFollowMe } = require('./whoDoesNotFollowMe');
 
@@ -6,13 +7,18 @@ exports.beautifyNotFollowers = async ({
 	username,
 	client_id,
 	client_secret,
-}) => {
+} = {}) => {
+	let user = username;
+
+	if (!user) user = await getLine()();
+	else input.close();
+
 	beautify.log(
-		`{fgGreen}Checking the followers of {fgWhite}${username}{fgGreen}...`,
+		`{fgGreen}Checking the followers of {fgWhite}${user}{fgGreen}...`,
 	);
 
 	const { thesePeopleDoNotFollowMe, message } = await whoDoesNotFollowMe({
-		username,
+		username: user,
 		client_id,
 		client_secret,
 	});
@@ -24,7 +30,7 @@ exports.beautifyNotFollowers = async ({
 				thesePeopleDoNotFollowMe.length === 1
 					? 'This person does'
 					: 'These people do'
-			} not follow ${username} on GitHub: [${
+			} not follow ${user} on GitHub: [${
 				thesePeopleDoNotFollowMe.length
 			}] {fgRed}${thesePeopleDoNotFollowMe.join('{fgWhite}, {fgRed}')}`,
 		);
