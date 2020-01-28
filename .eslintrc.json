@@ -15,6 +15,7 @@
 		"no-constant-condition": "off",
 		"no-plusplus": "off",
 		"camelcase": "off",
-		"no-console": "off"
+		"no-console": "off",
+		"no-restricted-syntax": "off"
 	}
 }
