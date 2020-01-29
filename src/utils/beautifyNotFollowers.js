@@ -1,5 +1,5 @@
 const beautify = require('beautify.log');
-const { getLine, input } = require('./readLine');
+const getLine = require('./readLine');
 
 const { whoDoesNotFollowMe } = require('./whoDoesNotFollowMe');
 
@@ -11,7 +11,6 @@ exports.beautifyNotFollowers = async ({
 	let user = username;
 
 	if (!user) user = await getLine()();
-	else input.close();
 
 	beautify.log(
 		`{fgGreen}Checking the followers of {fgWhite}${user}{fgGreen}...`,
