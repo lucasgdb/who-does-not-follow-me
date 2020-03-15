@@ -1,17 +1,17 @@
-const GitHubAPI = require('../services/GitHub.service');
-const {
+import GitHubAPI from '../services/GitHub.service';
+import {
 	per_page,
-	client_id: id,
-	client_secret: secret,
-} = require('../config/configuration.json');
+	client_id as clientId,
+	client_secret as clientSecret,
+} from '../config/configuration.json';
 
-exports.whoDoesNotFollowMe = async ({
+export default async function whoDoesNotFollowMe({
 	username = '',
-	client_id = id,
-	client_secret = secret,
-} = {}) => {
-	const followers = [];
-	const following = [];
+	client_id = clientId,
+	client_secret = clientSecret,
+} = {}) {
+	const followers: string[] = [];
+	const following: string[] = [];
 
 	try {
 		let page = 1;
@@ -26,7 +26,9 @@ exports.whoDoesNotFollowMe = async ({
 				},
 			});
 
-			following.push(...data.map(({ login }) => login));
+			following.push(
+				...data.map(({ login }: { login: string }) => login),
+			);
 
 			if (data.length < 100) break;
 			else page++;
@@ -44,7 +46,9 @@ exports.whoDoesNotFollowMe = async ({
 				},
 			});
 
-			followers.push(...data.map(({ login }) => login));
+			followers.push(
+				...data.map(({ login }: { login: string }) => login),
+			);
 
 			if (data.length < 100) break;
 			else page++;
@@ -62,4 +66,4 @@ exports.whoDoesNotFollowMe = async ({
 	);
 
 	return { thesePeopleDoNotFollowMe };
-};
+}
