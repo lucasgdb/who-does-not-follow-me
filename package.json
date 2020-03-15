@@ -1,7 +1,7 @@
 {
 	"name": "who-does-not-follow-me",
 	"description": "A Node.js script to check who does not follow you on the GitHub.",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"main": "dist/index.js",
 	"repository": "https://github.com/lucasgdb/who-does-not-follow-me.git",
 	"author": "Lucas Bittencourt <lucasgdbittencourt@gmail.com>",
@@ -25,7 +25,6 @@
 		"@types/axios": "^0.14.0",
 		"@types/line-reader": "^0.0.28",
 		"@types/node": "^13.9.1",
-		"babel-preset-minify": "^0.5.1",
 		"sucrase": "^3.12.1",
 		"tslint": "^6.1.0",
 		"tslint-config-prettier": "^1.18.0",
