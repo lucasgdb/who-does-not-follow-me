@@ -62,7 +62,7 @@ export default async function whoDoesNotFollowMe({
 	}
 
 	const thesePeopleDoNotFollowMe = following.filter(
-		login => !followers.includes(login),
+		(login) => !followers.includes(login),
 	);
 
 	return { thesePeopleDoNotFollowMe };
