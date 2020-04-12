@@ -20,19 +20,19 @@
 	],
 	"devDependencies": {
 		"@babel/cli": "^7.8.4",
-		"@babel/core": "^7.8.7",
-		"@babel/preset-env": "^7.8.7",
-		"@babel/preset-typescript": "^7.8.3",
+		"@babel/core": "^7.9.0",
+		"@babel/preset-env": "^7.9.5",
+		"@babel/preset-typescript": "^7.9.0",
 		"@types/axios": "^0.14.0",
 		"@types/line-reader": "^0.0.28",
-		"@types/node": "^13.9.1",
-		"sucrase": "^3.12.1",
-		"tslint": "^6.1.0",
+		"@types/node": "^13.11.1",
+		"sucrase": "^3.13.0",
+		"tslint": "^6.1.1",
 		"tslint-config-prettier": "^1.18.0",
 		"typescript": "^3.8.3"
 	},
 	"dependencies": {
-		"axios": "^0.19.1",
-		"beautify.log": "^2.0.2"
+		"axios": "^0.19.2",
+		"beautify.log": "^2.1.2"
 	}
 }
