@@ -21,7 +21,7 @@ A Node.js script to check who does not follow you on GitHub. (based on your foll
 Clean output:
 
 ```js
-import whoDoesNotFollowMe from './utils/whoDoesNotFollowMe';
+import whoDoesNotFollowMe from 'who-does-not-follow-me';
 
 async function notFollowers(
 	username: string,
